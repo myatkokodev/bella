@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- fontawesome css file -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
     <!-- owl carousel css files -->
     <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
@@ -49,7 +49,7 @@
                     <p><a href="#">Your Account </a><i class="bl-arrow-down"></i></p>
                 </div>
                 <div class="bl-cart-logo">
-                    <i class="fal fa-shopping-cart"></i>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
 
@@ -58,15 +58,62 @@
         <!-- navigation #f8f9fa -->
 
         <nav class="bl-navbar"> 
-            <div>
-              <div class="bl-navbar-items">
+            
+            <div class="bl-navbar-items">
                 <a class="nav-link" href="#">SHOP <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="#">NEW ARRIVALS <i class="bl-arrow-down"></i></a>
                 <a class="nav-link" href="#">PROMOTIONS <i class="bl-arrow-down"></i></a>
                 <a class="nav-link" href="#">TUTORIALS <i class="bl-arrow-down"></i></a>
                 <a class="nav-link" href="#">ABOUTS AS</a>
-              </div>
             </div>
+        </nav>
+
+
+        <!-- navigation for phone size -->
+        <nav class="bl-navbar-res"> 
+
+            <div class="bl-nav-navbar-res">
+                <!-- bl nav bar button for phone size -->
+                <div class="bl-nav-btn-res">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <!-- bl search bar for phone size -->
+                <div class="bl-search-bar-res">
+                    <form action="">
+                        <input type="search" name="search" placeholder="search">
+                    </form>
+                </div>
+
+                <div class="bl-cart-logo-res">
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+
+
+            <div class="bl-navbar-items-res">
+
+                <!-- site logo -->
+                <h1 class="bl-logo-res">
+                    <img src="assets/img/site-logo.png" alt="logo">
+                </h1>
+
+                <!-- tool bar -->
+                <div class="bl-tool-bar-res d-flex">
+                    <img src="assets/img/user.jpg" alt="user" width="40px" height="40px" >
+                    <div class="bl-user-name-res">
+                        <p class="bl-name-res">Hi, Superstar ?</p>
+                        <p><a href="#">Your Account </a><i class="bl-arrow-down"></i></p>
+                    </div>
+ 
+                </div>
+
+                <a class="nav-link" href="#">SHOP <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">NEW ARRIVALS <i class="bl-arrow-down"></i></a>
+                <a class="nav-link" href="#">PROMOTIONS <i class="bl-arrow-down"></i></a>
+                <a class="nav-link" href="#">TUTORIALS <i class="bl-arrow-down"></i></a>
+                <a class="nav-link" href="#">ABOUTS AS</a>
+            </div>
+            
         </nav>
 
     </header>
@@ -76,13 +123,13 @@
 
     <main id="bl-main">
         <!-- start banner area -->
-        <section id="banner-area" class="container">
-            <img src="./assets/img/banner.png" alt="banner-img">
+        <section id="banner-area" class="bl-container">
+            <img src="./assets/img/banner.jpg" alt="banner-img">
         </section>
 
         <!-- bl new arrivals section -->
         <section id="new-arrivals">
-            <div class="container">
+            <div class="bl-container">
                 <h1>New Arrivals</h1>
 
                 <div class="bl-new-arrivals owl-carousel owl-theme" >
@@ -97,7 +144,7 @@
                                  <div class="bl-price py-2">
                                      <span>2500 kyats</span>
                                  </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -119,7 +166,7 @@
                                  <div class="bl-price py-2">
                                      <span>4500 kyats</span>
                                  </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -141,7 +188,7 @@
                                  <div class="bl-price py-2">
                                      <span>1000 kyats</span>
                                  </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -163,7 +210,7 @@
                                  <div class="bl-price py-2">
                                      <span>2500 kyats</span>
                                  </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -185,7 +232,7 @@
                                  <div class="bl-price py-2">
                                      <span>4000 kyats</span>
                                  </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -207,7 +254,7 @@
                                  <div class="bl-price py-2">
                                      <span>2400 kyats</span>
                                  </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -228,46 +275,46 @@
 
         <section id="bl-ads">
             <h1>Don't Miss Out!</h1>
-            <div class="container bl-ads">
+            <div class="bl-container bl-ads">
 
-                <div class="bl-ads-item" style="background: #eee4a6;">
-                    <div class="bl-ads-text">
+                <div class="bl-ads-item" style="background: url('./assets/img/ads/ads1.jpg') no-repeat; background-size: cover;">
+                    <!-- <div class="bl-ads-text">
                         <h2>GET 4X POINTS</h2>
                         <p>On this bestselling Benefit Cosmetics brow pencil.</p>
                         <a href="#">SHOP NOW <i class="bl-arrow-right"></i></a>
                     </div>
 
-                    <p class="bl-ads-alert">Online only.Exclusion/terms apply.</p>
+                    <p class="bl-ads-alert">Online only.Exclusion/terms apply.</p> -->
                 </div>
 
-                <div class="bl-ads-item" style="background: #F9E2DA;">
-                    <div class="bl-ads-text">
+                <div class="bl-ads-item" style="background: url('./assets/img/ads/ads2.jpg') no-repeat; background-size: cover;">
+                    <!-- <div class="bl-ads-text">
                         <h2>NEW & NOW</h2>
                         <p></p>
                         <a href="#">SHOP JUST ARRIVED<i class="bl-arrow-right"></i></a>
                     </div>
 
-                    <p class="bl-ads-alert"></p>
+                    <p class="bl-ads-alert"></p> -->
                 </div>
 
-                <div class="bl-ads-item" style="background: #ea9ca9;">
-                    <div class="bl-ads-text">
+                <div class="bl-ads-item" style="background: url('./assets/img/ads/ads3.jpg') no-repeat; background-size: cover;">
+                    <!-- <div class="bl-ads-text">
                         <h2>NEW IN CLEAN FRAGRANCE</h2>
                         <p>Cruelty-free and made with feel-good ingredients only.</p>
                         <a href="#">SHOP NOW <i class="bl-arrow-right"></i></a>
                     </div>
 
-                    <p class="bl-ads-alert"></p>
+                    <p class="bl-ads-alert"></p> -->
                 </div>
 
-                <div class="bl-ads-item" style="background: #ffffff;">
-                    <div class="bl-ads-text">
+                <div class="bl-ads-item" style="background: url('./assets/img/ads/ads4.jpg') no-repeat; background-size: cover;">
+                    <!-- <div class="bl-ads-text">
                         <h2>BEAUTY INSIDER</h2>
                         <p>New rewards drop Tuesdays and Thursdays in the rewards Bazzar.</p>
                         <a href="#">SEE ALL REWARDS <i class="bl-arrow-right"></i></a>
                     </div>
 
-                    <p class="bl-ads-alert"></p>
+                    <p class="bl-ads-alert"></p> -->
                 </div>
 
             </div>
@@ -276,7 +323,7 @@
         <!-- bl selling fast section -->
 
         <section id="selling-fast">
-            <div class="container">
+            <div class="bl-container">
                 <h1>Selling Fast</h1>
 
                 <div class="bl-selling-fast owl-carousel owl-theme">
@@ -288,16 +335,16 @@
                              <div class="bl-product">
                                  <h6>MAKEUP SET</h6>
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                 <div class="bl-price py-2">
-                                     <span>2500 kyats</span>
-                                 </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
+                                 <div class="bl-price py-2">
+                                     <span>2500 kyats</span>
+                                 </div>
                              </div>
                         </div>
                     </div>
@@ -310,16 +357,17 @@
                              <div class="bl-product">
                                  <h6>MAKEUP SET</h6>
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                 <div class="bl-price py-2">
-                                     <span>4500 kyats</span>
-                                 </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
+                                 <div class="bl-price py-2">
+                                     <span>4500 kyats</span>
+                                 </div>
+
                              </div>
                         </div>
                     </div>
@@ -332,16 +380,16 @@
                              <div class="bl-product">
                                  <h6>RAINY DAYS</h6>
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                 <div class="bl-price py-2">
-                                     <span>4000 kyats</span>
-                                 </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
+                                 <div class="bl-price py-2">
+                                     <span>4000 kyats</span>
+                                 </div>
                              </div>
                         </div>
                     </div>
@@ -354,16 +402,16 @@
                              <div class="bl-product">
                                  <h6>MAKEUP SET</h6>
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                 <div class="bl-price py-2">
-                                     <span>1000 kyats</span>
-                                 </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
+                                 <div class="bl-price py-2">
+                                     <span>1000 kyats</span>
+                                 </div>
                              </div>
                         </div>
                     </div>
@@ -376,16 +424,16 @@
                              <div class="bl-product">
                                  <h6>RAINY DAYS</h6>
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                 <div class="bl-price py-2">
-                                     <span>4000 kyats</span>
-                                 </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
+                                 <div class="bl-price py-2">
+                                     <span>4000 kyats</span>
+                                 </div>
                              </div>
                         </div>
                     </div>
@@ -398,16 +446,16 @@
                              <div class="bl-product">
                                  <h6>RAINY DAYS</h6>
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                 <div class="bl-price py-2">
-                                     <span>2400 kyats</span>
-                                 </div>
-                                 <div class="rating text-warning font-size-12">
+                                 <div class="rating bl-star font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
+                                 <div class="bl-price py-2">
+                                     <span>2400 kyats</span>
+                                 </div>
                              </div>
                         </div>
                     </div>
@@ -419,7 +467,7 @@
 
         <!-- bl category list -->
         <section id="category-list">
-            <div class = "container">
+            <div class = "bl-container">
                 <h1>Shop By Category</h1>
                 <div class="bl-categories">
                     <div class="bl-category" style="background: url('./assets/img/categories/1.png'); background-size: cover;">
@@ -475,8 +523,8 @@
         </section>
 
         <!-- bl face app section -->
-        <section id="face-app">
-            <div class="bl-face-app container">
+        <section id="face-app"  class="container">
+            <div class="bl-face-app">
                 <p>BANNER HERE TO LINK TO "Which Address Do You Most Look Like" App</p>
             </div>
         </section>
@@ -486,8 +534,29 @@
 
     </main>
 
+    <!-- footer section -->
+
     <footer id="footer">
-        <div class="bl-footer"></div>
+        <div class="bl-footer container">
+            <!-- bl contact -->
+            <div class="bl-contact">
+                <ul>
+                    <li>CONTACT US</li>
+                    <li>No. 10 Khabaung Street, 10th Quarter, Hlaing Township Yangon Myanmar</li>
+                    <li>Telephone: (+95) 01 934 5593</li>
+                    <li>Email: <a href="#">customerservice@gmail.com</a></li>
+                </ul>
+            </div>
+            <!-- bl social -->
+            <div class="bl-social">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     

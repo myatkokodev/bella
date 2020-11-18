@@ -24,6 +24,18 @@
  /* Medium devices (tablets, less than 992px) */
  @media (max-width: 991.98px) { 
 
+    /* navigation section */
+
+    .bl-navbar-items a {
+        padding: 10px 2rem !important;
+    }
+
+    /* heading section */
+
+    .bl-tool-bar {
+        padding: 10px 0px !important;
+    }
+
     /* bl ads alert section */
 
     .bl-ads {
@@ -35,7 +47,16 @@
         height: 450px !important;
     }
 
+    /* bl new arrival section */
+
+    /* #new-arrivals .bl-container {
+        width: 75%;
+    } */
+
     /* bl category list section */
+    #category-list .bl-container {
+        width: 80% !important;
+    }
 
     .bl-category {
         width: 120px !important;
@@ -50,12 +71,239 @@
     }
 
     .bl-category:nth-child(2), .bl-category:nth-child(3) {
-        width: 300px !important;
+        width: 45% !important;
         height: 150px !important;
         margin-top: 35px !important;
+    }
+    /* bl testimonial section */
+
+    .bl-testimonial {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .bl-testimonial-user, .bl-testimonial-comment {
+        width: 80% !important;
+    }
+
+    .bl-testimonial-comment {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+}
+
+/* hide nav navbar */
+
+@media (min-width: 767.98px) {
+    .bl-navbar-res {
+        display: none;
+    }
+}
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+    /* global css class */
+
+    h1 {
+        font-size: 35px !important;
+    }
+
+    /* bl header section for responsive */
+
+    .bl-header-content {
+        display: none !important;
+    }
+
+
+    /* bl nevigation section for responsive */
+    .bl-navbar {
+        display: none !important;
+    }
+
+    /* bl main section */
+    main {
+        margin-top: 120px !important;
     }
 
 
 
+    /* bl ads section */
 
+    .bl-ads {
+        justify-content: space-around !important;
+    }
+
+    .bl-ads-item {
+        width: 260px !important;
+        height: 420px !important;
+    }
+
+    /* bl category list section */
+    
+        .bl-category {
+            width: 120px !important;
+            height: 130px !important;
+            margin-top: 35px;
+        }
+    
+        .bl-category:nth-child(1) {
+            width: 90% !important;
+            height: 230px !important;
+            margin: 0;
+        }
+    
+        .bl-category:nth-child(2), .bl-category:nth-child(3) {
+            width: 45% !important;
+            height: 120px !important;
+        }
+    
+ }
+
+ /* ------------------------------------------------ */
+
+ @media (max-width: 575.98px) { 
+
+        /* new arrivals section and selling fast section */
+
+        #new-arrivals .bl-container {
+            width: 80% !important;
+        }
+
+        #selling-fast .bl-container {
+            width: 80% !important;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center !important;
+        }
+
+
+         /* bl category list section */
+    
+         .bl-category {
+            width: 20% !important;
+            height: 100px !important;
+            margin-top: 35px;
+        }
+    
+        .bl-category:nth-child(1) {
+            width: 90% !important;
+            height: 180px !important;
+            margin: 0;
+        }
+    
+        .bl-category:nth-child(2), .bl-category:nth-child(3) {
+            width: 90% !important;
+            height: 180px !important;
+        }
+
+
+        /* bl testimonial section */
+
+        .bl-testimonial-user p {
+            font-size: 26px !important;
+        }
+
+        .bl-testimonial-user p:first-child {
+            font-size: 50px !important;
+        }
+
+        .bl-testimonial-img {
+            width: 180px !important;
+            height: 180px !important;
+        }
+
+        .bl-testimonial-comment-box p {
+            font-size: 18px !important;
+            padding: 0 20px !important;
+        }
+
+        /* bl face app section */
+
+        #face-app .bl-face-app {
+            height: 150px !important;
+        }
+
+        /* bl footer section */
+
+        .bl-contact ul li:first-child {
+            font-size: 1rem !important;
+        }
+        
+        .bl-contact ul li {
+            font-size: 13px !important;
+            padding-top: 0.5rem !important;
+        }
+
+        .social-icons a {
+            width: 30px !important;
+            height: 30px !important;
+            background: none !important;
+        }
   }
+
+
+  @media (max-width: 375px) { 
+
+    
+    /* bl new arrivals and selling fast section */
+    .bl-product-container {
+        width: 200px !important;
+        height: auto;
+    }
+
+    .bl-product-img {
+        width: 180px !important;
+        height: 160px !important;
+        overflow: hidden;
+    }
+
+    #new-arrivals .bl-container {
+        width: 70% !important;
+    }
+
+    #selling-fast .bl-container {
+        width: 70% !important;
+    }
+
+
+
+      /* bl category list section */
+    
+    .bl-category {
+        width: 20% !important;
+        height: 75px !important;
+        margin-top: 35px;
+    }
+
+    .bl-category:nth-child(1) {
+        width: 90% !important;
+        height: 130px !important;
+        margin: 0;
+    }
+
+    .bl-category:nth-child(2), .bl-category:nth-child(3) {
+        width: 90% !important;
+        height: 130px !important;
+    }
+
+    /* testimonial section */
+
+    .bl-testimonial-user p {
+        font-size: 20px !important;
+    }
+
+    .bl-testimonial-user p:first-child {
+        font-size: 40px !important;
+    }
+
+    .bl-testimonial-comment-box p {
+        font-size: 13px !important;
+    }
+
+}
+
+

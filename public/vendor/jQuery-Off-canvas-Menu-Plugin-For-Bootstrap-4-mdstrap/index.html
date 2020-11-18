@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery mdStrap - Mobile menu for the Bootstrap framework</title>
+
+        <!-- SEO meta tags -->
+        <meta name="title" content="jQuery mdStrap - Mobile menu for the Bootstrap framework" />
+        <meta name="keywords" content="jquery menu, mobile menu, material design menu, bootstrap mobile menu" />
+        <meta name="description" content="Mobile menu following Material Design design built on the Bootstrap Framework." />
+
+        <!-- Facebook meta tags -->
+        <meta property="og:url" content="'https://jquery-mdstrap.corneliucirlan.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="jQuery mdStrap - Mobile menu for the Bootstrap framework" />
+        <meta property="og:description" content="Mobile menu following Material Design design built on the Bootstrap Framework" />
+        <meta property="og:image" content="'https://jquery-mdstrap.corneliucirlan.com/img/screenshot.png" />
+
+        <!-- Tiwtter neta tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@corneliucirlan">
+        <meta name="twitter:title" content="jQuery mdStrap - Mobile menu for the Bootstrap framework">
+        <meta name="twitter:description" content="Mobile menu following Material Design design built on the Bootstrap Framework">
+        <meta name="twitter:image" content="'https://jquery-mdstrap.corneliucirlan.com/img/screenshot.png">
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header>
+            <nav class="navbar fixed-top navbar-toggleable-md navbar-dark bg-primary">
+
+                <div class="container-fluid">
+
+                    <!-- Navbar toggle -->
+                    <button class="navbar-toggler navbar-toggler-left" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Brand -->
+                    <div class="plugin-title">
+                        <h1 class="navbar-brand">jQuery mdStrap</h1>
+                        <span class="plugin-version">v4.2</span>
+                    </div>
+
+                    <!-- Main menu -->
+                    <ul class="navbar-nav navbar-nav-left">
+                        <li class="nav-item active"><a class="nav-link" href="#about">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#instalation">Instalation</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								Dropdown
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<!-- <div class="dropdown-divider"></div> -->
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#options">Options</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#development">Development</a></li>
+                    </ul>
+
+                    <div class="navbar-text">
+                        <a class="btn btn-sm btn-outline-github" target="_blank" href="https://www.github.com/corneliucirlan/jquery-mdstrap"><i class="fa fa-github"> View on GitHub</i></a>
+                        <a class="btn btn-sm btn-outline-github plugin-zip" target="_blank" href="https://github.com/corneliucirlan/mdstrap/releases"><i class="fa fa-download"> Download .zip</i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container-fluid">
+
+            <!-- Description -->
+            <section class="row" id="about">
+                <div class="col">
+                    <h2>About</h2>
+                    <p>jQuery plugin built on top of Bootstrap framework to create mobile menus similar to Google's Material Design.</p>
+                </div>
+            </section>
+
+            <!-- Installation -->
+            <section class="row" id="instalation">
+                <div class="col">
+                    <h2>Instalation</h2>
+                    <p>The install process is relativelly easy, regardless of which installation method you choose. The end result will be the same.</p>
+                    <h3>Using Bower</h3>
+                    <pre class="language-powershell"><code>$ bower install jquery-mdstrap</code></pre>
+                    <h3>Using npm</h3>
+                    <pre class="language-powershell"><code>$ npm install jquery-mdstrap</code></pre>
+                    <p>Running any of this commands will download the plugin into their respective location.</p>
+                    <h3>Manual installation</h3>
+                    <p>If you don't feel comfortable with using Bower, you can install the plugin manually. <a class="plugin-zip" href="https://github.com/corneliucirlan/mdstrap/releases" target="_blank">Download from here</a> in a <code class="language-markup">.zip</code> format and unzip the file. Place the contents of the <code class="language-markup">dist/</code> folder into your project.</p>
+
+                    <p>No matter what method you've chosen, you will now have to include the plugin's files into your project.</p>
+                    <pre class="language-markup">
+                        <code>
+&lt;!-- Bootstrap CSS --&gt;
+&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" /&gt;
+
+&lt;!-- jQuery library --&gt;
+&lt;script src="//code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- jQuery mdStrap --&gt;
+&lt;script src="jquery-mdstrap.min.js"&gt;&lt;/script&gt;
+                        </code>
+                    </pre>
+                    <p>It is recommended to load all JavaScript files just before the closing <code class="language-markup">&lt;/body&gt;</code> tag for better performance, but this is not a requirement. Just don't forget to add the necessary dependencies before the plugin files.</p>
+
+                    <h4>Source files</h4>
+                    <p>If you use SASS in your development process, this plugin comes with the <code class="language-sass">.sass</code> source files. Just include them into your project and you're done (on the CSS part).</p>
+                    <pre class="language-sass"><code>@import "/path/to/source/jquery-mdstrap"</code></pre>
+                    <p>If using SASS for development, it is actually the recoomended method as it reduces the number of HTTP requests and makes the page load faster.</p>
+                </div>
+            </section>
+
+            <!-- Usage -->
+            <section class="row" id="usage">
+                <div class="col">
+                    <h2>Usage</h2>
+                    <p>First, add the navigation mockup into your project. Something like this...</p>
+                    <pre class="language-markup">
+                        <code>
+&lt;nav class="navbar fixed-top navbar-toggleable-md navbar-dark bg-primary"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;!-- Navbar toggle --&gt;
+        &lt;button class="navbar-toggler navbar-toggler-left" type="button"&gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- Brand --&gt;
+        &lt;h1 class="navbar-brand"&gt;jQuery mdStrap&lt;/h1&gt;
+
+        &lt;!-- Main menu --&gt;
+        &lt;ul class="navbar-nav navbar-nav-left"&gt;
+            &lt;li class="nav-item active"&gt;&lt;a class="nav-link" href="#about"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#instalation"&gt;Instalation&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#options"&gt;Options&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#development"&gt;Development&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </code>
+                    </pre>
+                    <p>Use the <code class="language-sass">.navbar-toggleable-*</code> classes to enable the mobile view at different screen widths. <a target="_blank" href="https://v4-alpha.getbootstrap.com/layout/grid/">Reference the Bootstrap documentation</a> for more details about the grid system.</p>
+                    <p>After that, call the plugin in a separate JavaScript file or at the bottom of you page (after the plugin's own JS script).</p>
+                    <pre class="language-javascript">
+                        <code>
+jQuery(document).ready(function($) {
+
+    // Call with default params
+    $('.navbar-nav-left').mdStrap();
+
+    // Call with custom params
+    $('.navba-nav-right').mdStrap({
+        'menuTrigger' : '.navbar-toggler-right'
+    });
+
+});
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Options -->
+            <section class="row" id="options">
+                <div class="col">
+                    <h2>Options</h2>
+                    <table class="table table-responsive table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Type</th>
+                                <th>Default</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code class="language-markup">fixedTop</code></td>
+                                <td>boolean</td>
+                                <td><code class="language-markup">true</code></td>
+                                <td>Specify if the navigation is fixed to the top.</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup">menuTrigger</code></td>
+                                <td>CSS class</td>
+                                <td><code class="language-markup">.navbar-toggler-left</code></td>
+                                <td>The class that triggers the menu when clicked.</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup">scrollValue</code></td>
+                                <td>integer</td>
+                                <td><code class="language-markup">10</code></td>
+                                <td>The value on which the navbar gets a box-shadow effect. Necessary only when <code class="language-markup">fixedTop</code> is set to <code class="language-markup">true</code>.</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup">debug</code></td>
+                                <td>boolean</td>
+                                <td><code class="language-markup">false</code></td>
+                                <td>Logs various plugin related messages/settings. Recommended only when asked by the developer or facing with erros generated by the plugin.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Development -->
+            <section class="row" id="development">
+                <div class="col">
+                    <h2>Development</h2>
+                    This plugin is in continuously development.
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p>Plugin developed and maintained by <a class='footer-link' href="https://www.corneliucirlan.com/" target="_blank">Corneliu C&icirc;rlan</a></p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+							<div class="col text-center">
+
+								<!-- Website -->
+								<a class='footer-link' target="_blank" title="Check out my website" href="https://www.corneliucirlan.com">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+										<path
+										d="M1024 0q141 0 272 36.5t245 103 207.5 160 160 207.5 103 245 36.5 272-36.5 272-103 245-160 207.5-207.5 160-245 103-272 36.5-272-36.5-245-103-207.5-160-160-207.5-103-244.5T0 1024q0-141 36.5-272t103-245 160-207.5 207.5-160 244.5-103T1024 0zm0 1920q123 0 237.5-32t214-90.5T1657 1657t140.5-181.5T1888 1262t32-238q0-123-32-237.5t-90.5-214T1657 391t-181.5-140.5-214-90.5-237.5-32-237.5 32-214 90.5T391 391 250.5 572.5t-90.5 214-32 237.5 32 237.5 90.5 214T391 1657t181.5 140.5T786 1888t238 32zm597-880l48-144h75l-85 256h-75l-48-144-48 144h-75l-85-256h75l48 144 48-144h74zm-464-144h75l-85 256h-75l-48-144-48 144h-75l-85-256h75l48 144 48-144h74l48 144zm-512 0h75l-85 256h-75l-48-144-48 144h-75l-85-256h75l48 144 48-144h74l48 144z" />
+									</svg>
+								</a>
+							</div>
+							
+							<!-- Github -->
+							<div class="col text-center">
+								<a class='footer-link' target="_blank" title="Check out my Github page" href="https://www.github.com/corneliucirlan">
+									<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+										<title>ionicons-v5_logos</title>
+										<path
+											d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z" />
+									</svg>
+								</a>
+							</div>
+							
+							<!-- Facebook -->
+                            <div class="col text-center">
+								<a class='footer-link' target="_blank" title="Check out my Facebook page" href="https://www.facebook.com/corneliucirlan">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+										<path
+											d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+										</svg>
+								</a>
+							</div>
+							
+							<!-- Instagram -->
+							<div class="col text-center">
+								<a class='footer-link' target="_blank" title="Check out my Instagram page" href="https://www.instagram.com/corneliucirlan">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+										<path
+											d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+										</svg>
+								</a>
+							</div>
+							
+							<!-- Twitter -->
+							<div class="col text-center">
+								<a class='footer-link' target="_blank" title="Check out my Twitter page" href="https://twitter.com/corneliucirlan">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+										<path
+											d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+										</svg>
+								</a>
+							</div>
+							
+							<!-- Linkedin -->
+							<div class="col text-center">
+								<a class='footer-link' target="_blank" title="Check out my Linkedin page" href="https://www.linkedin.com/in/corneliucirlan">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+										<path
+											d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+										</svg>
+								</a>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

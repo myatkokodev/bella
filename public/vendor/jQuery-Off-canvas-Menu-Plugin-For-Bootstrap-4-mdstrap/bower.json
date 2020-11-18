@@ -1,0 +1,37 @@
+{
+  "name": "jquery-mdstrap",
+  "homepage": "https://github.com/corneliucirlan/jquery-mdstrap.git",
+  "authors": [
+    "Corneliu Cîrlan <corneliu@corneliucirlan.com>"
+  ],
+  "description": "jQuery plugin built on top of Bootstrap framework to create mobile menus similar to Google's Material Design",
+  "main": [
+    "dist/css/jquery-mdstrap.css",
+    "dist/js/jquery-mdstrap.js"
+  ],
+  "keywords": [
+    "jquery",
+    "bootstrap",
+    "material",
+    "design",
+    "plugin",
+    "google",
+    "mobile",
+    "menu",
+    "responsive",
+    "menu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/css",
+    "/fonts",
+    "/img",
+    "/js",
+    "test",
+    "tests",
+    "/index.html"
+  ]
+}
